@@ -1,0 +1,3 @@
+(declare-fun var0 () String)
+(assert (str.in.re var0 (re.++ (re.* (re.+ (str.to.re "33"))) (re.++ (re.+ (re.union (str.to.re "11") (str.to.re "222"))) (re.+ (re.+ (str.to.re "0")))))))
+(check-sat)

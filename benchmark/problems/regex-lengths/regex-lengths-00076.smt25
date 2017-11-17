@@ -1,0 +1,4 @@
+(declare-fun var0 () String)
+(assert (str.in.re var0 (re.++ (re.* (re.+ (str.to.re "d"))) (re.++ (re.* (re.* (str.to.re "c"))) (re.++ (re.+ (re.* (str.to.re "bb"))) (re.++ (re.+ (re.+ (str.to.re "aaa"))) (re.++ (re.* (re.+ (str.to.re "999"))) (re.++ (re.+ (re.union (str.to.re "7") (str.to.re "88"))) (re.++ (re.* (re.* (str.to.re "6"))) (re.++ (re.union (re.union (str.to.re "2") (str.to.re "333")) (re.union (str.to.re "444") (str.to.re "5"))) (re.++ (re.+ (re.* (str.to.re "11"))) (re.* (re.* (str.to.re "0"))))))))))))))
+(assert (<= 76 (str.len var0)))
+(check-sat)

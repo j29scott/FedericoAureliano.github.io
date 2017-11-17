@@ -1,0 +1,3 @@
+(declare-fun var0 () String)
+(assert (= (str.++ "kB]" var0) (str.++ var0 "#&E")))
+(check-sat)

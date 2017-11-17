@@ -1,0 +1,5 @@
+(declare-fun var0 () String)
+(declare-fun var1 () String)
+(declare-fun var2 () String)
+(assert (= (str.++ "7t=" (str.++ var0 (str.++ var1 var2))) (str.++ (str.++ var0 (str.++ var1 var2)) "A2>")))
+(check-sat)

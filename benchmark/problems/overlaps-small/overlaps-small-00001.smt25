@@ -1,0 +1,3 @@
+(declare-fun var0 () String)
+(assert (= (str.++ "uyh" var0) (str.++ var0 "P$Q")))
+(check-sat)
