@@ -3,6 +3,7 @@
 import os
 import sys
 import json
+import glob
 import subprocess
 import signal
 import datetime
@@ -91,7 +92,7 @@ def gen_compare(category):
     # generate comparison graph
     # BIN_DIR/json2compare.py "Comparison for Small Concats" $cvc4_json $z3str3_json > $GRAPHS_DIR/comparison.png
     compare = os.path.join(BIN, "json2compare.py")
-    title = " \"Comparison for " + category +"\" "
+    title = " Comparison for " + category +" "
     z3 = os.path.join(DATA,category+"-Z3str3.json")
     cvc4 = os.path.join(DATA,category+"-CVC4.json")
     out = os.path.join(GRAPHS, category+"-"+"comparison.png")
@@ -102,7 +103,7 @@ def gen_cactus(category):
     # generate cactus graph
     # BIN_DIR/json2cactus.py "Cactus plot for Small Concats" 15 $cvc4_json $z3str3_json > $GRAPHS_DIR/cactus.png
     cactus = os.path.join(BIN, "json2cactus.py")
-    title = " \"Cactus plot for " + category +"\" "
+    title = " Cactus plot for " + category +" "
     z3 = os.path.join(DATA,category+"-Z3str3.json")
     cvc4 = os.path.join(DATA,category+"-CVC4.json")
     out = os.path.join(GRAPHS, category+"-"+"cactus.png")
