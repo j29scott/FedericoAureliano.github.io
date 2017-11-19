@@ -46,7 +46,7 @@ h2 {
     }
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 750px) {
     p {
         text-align: justify;
     }
@@ -66,11 +66,20 @@ h2 {
     font-family: DengXian, "Microsoft YaHei", "Hiragino Sans GB", STHeiti, sans-sherif;
 }
 
-@media screen and (min-width: 500px) {
+
+#id-picture {
+    float: left;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 750px) {
     #id-picture {
         float: left;
-        margin-top: -23px;
+        margin-top: -33px;
         margin-right: 50px;
+        margin-left: 0; 
     }
 }
 
@@ -172,13 +181,12 @@ h3 {
 
 .hat {
     font-size: 1rem;
-    margin: 2.5rem auto;
     text-align: left;
 }
 
 @media screen and (min-width: 750px) {
     .hat {
-        margin: 2.5rem auto;
+        margin: 2rem auto;
         font-size: 1.25rem;
     }
 }
@@ -267,6 +275,79 @@ h3 {
 
 @media screen and (min-width: 750px) {
     .subtitle a {
-        font-size: 1.15rem;
+        font-size: 1rem;
+    }
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin-top: -0.5em;
+    padding: 0;
+    overflow: hidden;
+    font-size: 1.1rem;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: inline;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+ul.topnav li:before {
+    content: "•";
+}
+
+ul.topnav li:first-child:before {
+    content: "";
+}
+
+ul.topnav li:first-child {
+    margin-left: -5px;
+}
+
+@media screen and (max-width: 750px){
+    ul.topnav {
+        margin-top: 0;
+        -moz-column-gap: 10px;
+        -webkit-column-gap: 10px;
+        column-gap: 10px;
+
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+
+        width: 200px;
+    }
+    ul.topnav, 
+    ul.topnav li {
+        float: none;
+        font-size: 1rem;
+    }
+    ul.topnav li:before {
+        content: "";
+    }
+    ul.topnav li a {
+        display: inline;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    ul.topnav li:first-child {
+        margin-left: 0px;
+    }
+}
+
+.email {
+    margin-top: -5px;
+    margin-bottom: 0px;
+    font-size: small;
+}
+
+@media screen and (min-width: 750px) {
+    .email {
+        margin-top: -5px;
+        margin-left: 135px;
+        margin-bottom: 15px;
     }
 }
