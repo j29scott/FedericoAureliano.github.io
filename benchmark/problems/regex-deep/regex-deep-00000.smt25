@@ -1,4 +1,0 @@
-(declare-fun var0 () String)
-(assert (str.in.re var0 (re.++ (str.to.re "1") (str.to.re "000"))))
-(assert (<= 15 (str.len var0)))
-(check-sat)
