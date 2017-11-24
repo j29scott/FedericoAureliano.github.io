@@ -93,36 +93,9 @@ h2 {
     margin-top: 4pt !important;
 }
 
-.hidden-microdata {
-    display: none;
-}
-
-.nobreak {
-    white-space: pre;
-    word-break: keep-all;
-}
-
 .paper-title {
-    font-weight: bold;
+    font-style: italic;
     text-decoration: none;
-}
-
-.print-link {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 2em 0;
-}
-
-.print-link:before {
-    content: "→ ";
-}
-
-.published-in {
-    font-style: italic;
-}
-
-.specialization {
-    font-style: italic;
 }
 
 .subtext strong {
@@ -159,7 +132,6 @@ ul.topnav {
     h2 {
         border: none;
         margin-top: 1em;
-        margin-bottom: 0.5em;
         font-size: 1.75rem;
     }
     #id-picture {
