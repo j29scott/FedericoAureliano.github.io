@@ -142,10 +142,10 @@ ul.topnav {
     }
     .date {
         float: left;
-        font-size: 1.25rem;
+        font-size: 1.1rem;
         margin-left: -6.3em;
         margin-right: 0.3em;
-        margin-top: -0.15em;
+        margin-top: -0.1em;
         text-align: right;
         width: 5.5em;
     }
