@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin: 30px 20px;
+    margin: 50px 20px;
 }
 
 a {
@@ -35,7 +35,7 @@ h2 {
 
 #id-picture {
     display:none;
-    margin-top: 0em;
+    margin-top: -2.5em;
     float: left;
     margin-right: 15px;
     margin-left: 0; 
@@ -149,9 +149,9 @@ ul.topnav {
         font-size: 1.75rem;
     }
     #id-picture {
-        margin-top: -2em;
+        margin-top: -4em;
         float: left;
-        margin-right: 50px;
+        margin-right: 35px;
         margin-left: 0; 
     }
     .date {
@@ -171,7 +171,7 @@ ul.topnav {
         margin: 0 0 0 7em;
     }
     body {
-        margin: 50px auto;
+        margin: 100px auto;
         width: 750px;
     }
 
