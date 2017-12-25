@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin: 50px 20px;
+    margin: 70px 20px;
 }
 
 a {
@@ -35,7 +35,7 @@ h2 {
 
 #id-picture {
     display:none;
-    margin-top: -2.5em;
+    margin-top: -4em;
     float: left;
     margin-right: 15px;
     margin-left: 0; 
@@ -164,7 +164,7 @@ ul.topnav {
         width: 5.5em;
     }
     .hat {
-        margin: 3.5em 0em 0em 0em;
+        margin: 3em 0em 2em 0em;
         font-size: 1.25rem;
     }
     .history {
