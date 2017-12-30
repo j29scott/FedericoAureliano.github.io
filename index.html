@@ -2,166 +2,284 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <title>Federico Mora</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65924431-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
         gtag('config', 'UA-65924431-1');
     </script>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
-    <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-    <title>Federico Mora</title>
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="./css/default.css" title="default">
+    <style>
+        body {
+            font-family: 'Barlow', sans-serif;
+            line-height: 1.4;
+        }
+
+        a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .navl {
+            display: block;
+            float: left;
+            margin-right: 1em;
+        }
+    </style>
 </head>
 
-<body itemscope="" itemtype="http://schema.org/Person">
-    <a href="./images/me.png"><img id="id-picture" itemprop="image" src="./images/me.png" alt="picture" width="120" height="auto"></a>
-    <a href="./index.html" style="text-decoration:none">
-    <h1>
-        <span itemprop="name">
-            <span class="nobreak" itemprop="givenName">Federico</span> 
-            <span class="nobreak" itemprop="familyName">Mora</span>
-        </span>
-    </h1>
-    </a>
-    <ul class="topnav">
-        <li><a href="./blog.html">Posts</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-    </ul>
-
-    <p class="hat">I'm a M.Sc. student at the University of Toronto, working with <a href="http://www.cs.toronto.edu/~chechik/">Marsha Chechik</a>. 
-        I'm interested in logic, verification, proof assistants, and programming languages. 
-    </p>
-    
-    <h2 id="education">Education</h2>
-    <div class="history">
-        <span class="date">Current</span>
-        <p>
-            M.Sc. Computer Science<br> 
-            University of Toronto<br>
-            Supervised by <a href="http://www.cs.toronto.edu/~chechik/">Marsha Chechik</a>
-        </p>
-    </div>
-    
-    <div class="history">
-        <span class="date">2015</span>
-        <p>
-            B.Sc. Computer Science and Mathematics<br> 
-            Mount Allison University<br> 
-            First Class Honours with Distinction
-        </p>
-    </div>
-    
-    <!-- <h2 id="publications">Publications</h2>
-    <div class="history">
-        <span class="date">2017</span>
-        <p class="paper">
-            <a class="paper-title">
-                <span itemscope="" itemtype="http://schema.org/ScholarlyArticle">Client-Specific Equivalence Checking</span>
-            </a>
-            (<a href="https://client-specific-equivalence-checker.github.io/papers/csec.pdf">draft</a>)
-        </p>
-        <p class="paper-details">
-            <span class="authors">
-                <a href="www.cs.toronto.edu/~liyi/host/">Yi Li</a>, 
-                <em>Federico Mora</em>, 
-                <a href="http://www.ece.ubc.ca/~mjulia/">Julia Rubin</a>, 
-                <a href="http://www.cs.toronto.edu/~chechik/">Marsha Chechik</a>
-            </span>
-        </p>
-    </div> -->
-
-    <h2 id="projects">Projects</h2>
-    <!-- <div class="history">
-        <span class="date">
-            CLEVER
-        </span>
-        <p>
-            The client-specific equivalence checking problem is that of determining whether a component update affects
-            the overall system; the <a href="https://client-specific-equivalence-checker.github.io/">CLEVER</a> 
-            (CLient EquiValence checkER) project aims to address this problem using a variety
-            of (semi-)automated techniques.
-        </p>
-    </div> -->
-    <div class="history">
-        <span class="date">
-            Z3str3
-        </span>
-        <p>
-            I am working on a formal calculus for the
-            <a href="https://sites.google.com/site/z3strsolver/">Z3str3</a>
-            solver. I also maintain a website that compares string solvers on a collection of benchmarks. Click the figures below to see more.
-        </p>
-        <a href="https://federicoaureliano.github.io/StringSMTBenchmarks/">
-            <div class="thumb-wrapper">
-                <img id="thumb-one" src="https://federicoaureliano.github.io/StringSMTBenchmarks/problems/cactus.png">
-                <img id="thumb-two" src="https://federicoaureliano.github.io/StringSMTBenchmarks/problems/comparison.png">
+<body style="margin: 1em 1em 1em 1em">
+    <div class="container" style="max-width: 800px; min-width: 800px">
+        <div class="row">
+            <div class="col-3">
+                <a href="./images/Federico.png">
+                    <img src="./images/Federico-T.png">
+                </a>
             </div>
-        </a>
-    </div>
-    <div class="history">
-        <span class="date">
-            PyExSMT
-        </span>
-        <p>
-            <a href="https://github.com/FedericoAureliano/PyExSMT">PyExSMT</a> is a substantial rewrite of the
-            <a href="https://github.com/thomasjball/PyExZ3">PyExZ3</a> symbolic execution engine, now using the
-            <a href="https://github.com/pysmt/pysmt">PySMT</a> project.
-        </p>
+            <div class="col" style="margin: 3.4em 0em 1em 0em">
+                <h1 style="margin-bottom: 0.1em">Federico Mora</h1>
+                <ul style="margin: 0; padding: 0;">
+                    <li class="navl">fmora[at]cs.toronto.edu</li>
+                </ul>
+                <br>
+                <ul style="margin: 0; padding: 0;">
+                    <li class="navl">
+                        <a href="#Projects">Projects</a>
+                    </li>
+                    <li class="navl">
+                        <a href="#Teaching">Teaching</a>
+                    </li>
+                    <li class="navl">
+                        <a href="#Awards">Awards</a>
+                    </li>
+                    <li class="navl">
+                        <a href="#Professional">Professional</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <p style="margin: 1em 2em 2em 0em; font-size:120%" align="justify">
+                    I am interested in the semi-automated verification and construction of programs and proofs. These two areas are related by
+                    the concept of correctness: verification attempts to prove that an existing artifact is what it purports
+                    to be, and construction attempts to build a ratified artifact from the ground up. Both cases are preeminently
+                    applicable in the engineering of safety and security critical software, as well as in formal mathematics.
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <h2 id="Education">Education</h2>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:0.75em">
+                    <div class="col-2">
+                        2018
+                    </div>
+                    <div class="col">
+                        M.Sc. Computer Science
+                        <br> Supervised by
+                        <a href="http://www.cs.toronto.edu/~chechik/">Marsha Chechik</a>
+                        <br>
+                        <a href="">University of Toronto</a>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:0.75em">
+                    <div class="col-2">
+                        2015
+                    </div>
+                    <div class="col">
+                        B.Sc. Computer Science and Mathematics
+                        <br>
+                        <em>First Class Honours with Distinction</em>
+                        <br>
+                        <a href="http://www.mta.ca">Mount Allison University</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <h2 id="Employment">Employment</h2>
+                </div>
+                <div class="row" style="margin-bottom:0.75em">
+                    <div class="col-2" style="text-align: right;">
+                        2017
+                    </div>
+                    <div class="col">
+                        Research Intern
+                        <br> Supervised by
+                        <a href="https://scholar.google.ca/citations?user=leik1dQAAAAJ&hl=en">Ramesh S.</a>
+                        <br>
+                        <a href="https://search-careers.gm.com/c/research-development-jobs">General Motors</a>
+                    </div>
+                </div>
+                <div class="row" style="margin-bottom:0.75em">
+                    <div class="col-2" style="text-align: right;">
+                        2015/6
+                    </div>
+                    <div class="col">
+                        Research Assistant
+                        <br> Supervised by
+                        <a href="https://www.cs.usask.ca/~spiteri/">Raymond Spiteri</a>
+                        <br>
+                        <a href="https://www.usask.ca/">University of Saskatchewan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <h2 id="Projects">Projects</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:1em">
+            <div class="col-2" style="text-align: right;">
+                Z3str3
+            </div>
+            <div class="col">
+                I am working on a formal calculus for the
+                <a href="https://sites.google.com/site/z3strsolver/">Z3str3</a>
+                solver. I also maintain a website that compares string solvers on a collection of benchmarks. Click the figures below to
+                see more.
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom:1em">
+            <div class="col-2" style="text-align: right;">
+
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col">
+                        <a href="https://federicoaureliano.github.io/StringSMTBenchmarks/">
+                            <img width="100%" src="https://federicoaureliano.github.io/StringSMTBenchmarks/problems/cactus.png">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <a href="https://federicoaureliano.github.io/StringSMTBenchmarks/">
+                            <img width="100%" src="https://federicoaureliano.github.io/StringSMTBenchmarks/problems/comparison.png">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2" style="text-align: right;">
+                PyExSMT
+            </div>
+            <div class="col">
+                <a href="https://github.com/FedericoAureliano/PyExSMT">PyExSMT</a> is a substantial rewrite of the
+                <a href="https://github.com/thomasjball/PyExZ3">PyExZ3</a> symbolic execution engine, now using the
+                <a href="https://github.com/pysmt/pysmt">PySMT</a> project.
+            </div>
+        </div>
+        <br>
+        <br>
+
+        <div class="row">
+            <div class="col">
+                <h2 id="Teaching">Teaching</h2>
+            </div>
+        </div>
+        <div class="row" style="margin-bottom:0.75em">
+            <div class="col-2" style="text-align: right;">
+                Current
+            </div>
+            <div class="col">
+                University of Toronto, Teaching Assistant
+                <br>
+                <a href="http://www.teach.cs.toronto.edu/~csc384h/winter/">CSC 384: Introduction to Artificial Intelligence</a>
+            </div>
+        </div>
+
+        <div class="row" style="margin-bottom:0.75em">
+            <div class="col-2" style="text-align: right;">
+                Previous
+            </div>
+            <div class="col">
+                University of Toronto, Teaching Assistant
+                <br>
+                <a href="https://www.cs.toronto.edu/~gfb/csc324/2017F/">CSC 324: Programming Languages</a>
+                <br>
+                <a href="http://www.cs.toronto.edu/~chechik/courses16/csc410/">CSC 410: Software Testing and Verification</a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2" style="text-align: right;">
+
+            </div>
+            <div class="col">
+                Mount Allison University, Teaching Assistant
+                <br> COMP 1631: Introduction to Computer Science
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col">
+                <h2 id="Awards">Awards</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2" style="text-align: right;">
+                2017
+            </div>
+            <div class="col">
+                <em>Alfred B. Lehman Graduate Scholarship</em>.&nbsp; Awarded on the basis of academic merit with preference
+                given to students studying in the area of discrete mathematics.
+            </div>
+        </div>
+
+        <br>
+        <div class="row">
+            <div class="col">
+                <h2 id="Professional">Professional</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2" style="text-align: right;">
+                2017
+            </div>
+            <div class="col">
+                <em>
+                    External Reviewer
+                </em>.&nbsp;
+                <a href="http://ase2017.org/">International Conference on Automated Software Engineering</a>;
+                <a href="http://esec-fse17.uni-paderborn.de/">Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations
+                    of Software Engineering
+                </a>
+            </div>
+        </div>
+
     </div>
 
-    <h2 id="teaching">Teaching</h2>
-    <div class="history">
-        <span class="date">Current</span>
-        <p>
-            University of Toronto<br>
-            Teaching Assistant<br>
-            <a href="http://www.teach.cs.toronto.edu/~csc384h/winter/">CSC 384: Introduction to Artificial Intelligence</a>
-        </p>
-    </div>
-    
-    <div class="history">
-        <span class="date">Previous</span>
-        <p>
-            University of Toronto<br>
-            Teaching Assistant<br>
-            <a href="https://www.cs.toronto.edu/~gfb/csc324/2017F/">CSC 324: Programming Languages</a><br>
-            <a href="http://www.cs.toronto.edu/~chechik/courses16/csc410/">CSC 410: Software Testing and Verification</a>
-        </p>
-        <p>
-            Mount Allison University<br>
-            Teaching Assistant<br>
-            COMP 1631: Introduction to Computer Science
-        </p>
-    </div>
+    <br>
+    <br>
+</body>
 
-    <h2 id="education">Awards</h2>
-    <div class="history">
-        <span class="date">2017</span>
-        <p>
-            <em>Alfred B. Lehman Graduate Scholarship</em>.
-            Awarded on the basis of academic merit with preference given
-            to students studying in the area of discrete mathematics.
-        </p>
-    </div>
-
-    <h2 id="professional">Professional Activities</h2>
-    <div class="history">
-        <span class="date">2017</span>
-        <p>
-            <em>External Reviewer</em>. 
-            International Conference on Automated Software Engineering (<a href="http://ase2017.org/">ASE 2017</a>).
-        </p>
-        <p>
-            <em>External Reviewer</em>. 
-            Joint Meeting of the European Software Engineering Conference and the ACM SIGSOFT Symposium on the Foundations of Software Engineering 
-            (<a href="http://esec-fse17.uni-paderborn.de/">ESEC/FSE 2017</a>).
-        </p>
-    </div>
-</body></html>
+</html>
