@@ -40,14 +40,7 @@ function display_news() {
     document.getElementById("news").innerHTML = out;
 }
 
-function display_date() {
-    var m = "Last updated: " + document.lastModified;
-    var p = m.length - 8;
-    document.getElementById("footer").innerHTML = m.substring(p, 0);
-}
-
 function update_content(){
     display_pubs("");
     display_news();
-    display_date();
 }
