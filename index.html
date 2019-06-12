@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<html>
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <title>Federico Mora</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="pubs.json"></script>
+    <script type="text/javascript" src="news.json"></script>
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-65924431-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -19,329 +19,83 @@
         gtag('js', new Date());
         gtag('config', 'UA-65924431-1');
     </script>
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Muli', sans-serif;
-        }
-
-        a {
-            color: #164d85;
-            text-decoration: none;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        .navl {
-            display: block;
-            float: left;
-            margin-right: 1em;
-        }
-    </style>
 </head>
 
-<body style="max-width: 850px; min-width: 750px; margin: 1.5em auto 4em auto">
-    <div class="container" style="max-width: 750px; min-width: 750px; margin: auto">
-        <div class="row">
-            <div class="col-3">
-                <a href="./images/Federico.png">
-                    <img src="./images/Federico-T.png">
-                </a>
-            </div>
-            <div class="col" style="margin: 3.5em auto auto auto">
-                <div class="row">
-                    <h1 style="margin-bottom: 0em">Federico Mora</h1>
-                </div>
-                <div class="row">
-                    <ul style="margin: 0; padding: 0;">
-                        <li class="navl">
-                            <a href="./includes/email.html">Contact</a>
-                        </li>
-                        <li class="navl">
-                            <a href="https://github.com/FedericoAureliano">GitHub</a>
-                        </li>
-                        <li class="navl">
-                            <a href="./files/cv.pdf">CV</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <ul style="margin: 0; padding: 0;">
-                        <li class="navl">
-                            <a href="#Publications">Publications</a>
-                        </li>
-                        <li class="navl">
-                            <a href="#Projects">Projects</a>
-                        </li>
-                        <li class="navl">
-                            <a href="#Teaching">Teaching</a>
-                        </li>
-                        <li class="navl">
-                            <a href="#Awards">Awards</a>
-                        </li>
-                        <li class="navl">
-                            <a href="#Professional">Professional</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
+<body onload="update_content()">
+<div class="main">
+<div class="hbar"></div>
 
-        <div class="row">
-            <div class="col">
-                <p style="margin: 2em 0em 2em 0em; font-size:110%">
-                    I am interested in the automated verification and
-                    construction of programs and proofs. My research focuses on 
-                    logic, programming languages, and software engineering.
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <h2 id="Education">Education</h2>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom:0.75em">
-                    <div class="col-3" style="text-align: right;">
-                        2018
-                    </div>
-                    <div class="col" style="font-size:95%">
-                        M.Sc. Computer Science
-                        <br> Supervised by
-                        <a href="http://www.cs.toronto.edu/~chechik/">Marsha Chechik</a>
-                        <br>
-                        <a href="">University of Toronto</a>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom:0.75em">
-                    <div class="col-3" style="text-align: right;">
-                        2015
-                    </div>
-                    <div class="col" style="font-size:95%">
-                        B.Sc. Math and Computer Science
-                        <br>
-                        <em>First Class Honours with Distinction</em>
-                        <br>
-                        <a href="http://www.mta.ca">Mount Allison University</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="row">
-                    <h2 id="Employment">Employment</h2>
-                </div>
-                <div class="row" style="margin-bottom:0.75em">
-                    <div class="col-3" style="text-align: right;">
-                        2017
-                    </div>
-                    <div class="col" style="font-size:95%">
-                        Research Intern
-                        <br> Supervised by
-                        <a href="https://scholar.google.ca/citations?user=leik1dQAAAAJ&hl=en">Ramesh S.</a>
-                        <br>
-                        <a href="https://search-careers.gm.com/c/research-development-jobs">General Motors</a>
-                    </div>
-                </div>
-                <div class="row" style="margin-bottom:0.75em">
-                    <div class="col-3" style="text-align: right;">
-                        2015/6
-                    </div>
-                    <div class="col" style="font-size:95%">
-                        Research Assistant
-                        <br> Supervised by
-                        <a href="https://www.cs.usask.ca/~spiteri/">Raymond Spiteri</a>
-                        <br>
-                        <a href="https://www.usask.ca/">University of Saskatchewan</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <br>
-
-        <div class="row">
-            <div class="col">
-                <h2 id="Publications">Publications</h2>
-            </div>
-        </div>
-        <div class="row" style="margin-bottom:1em">
-            <div class="col-2" style="text-align: right;">
-                ASE '18
-            </div>
-            <div class="col">
-                <a href="https://dl.acm.org/citation.cfm?doid=3238147.3238178">Client-Specific Equivalence Checking</a> <br> 
-                F. Mora, Y. Li, J. Rubin, and M. Chechik
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2" style="text-align: right;">
-                CAV '18
-            </div>
-            <div class="col">
-                <a href="https://link.springer.com/chapter/10.1007/978-3-319-96142-2_6">StringFuzz: A Fuzzer for String Solvers</a> <br> 
-                D. Blotsky, F. Mora, M. Berzish, Y. Zheng, I. Kabir, and V. Ganesh
-            </div>
-        </div>
-
-        <br>
-
-        <div class="row">
-            <div class="col">
-                <h2 id="Projects">Projects</h2>
-            </div>
-        </div>
-        <div class="row" style="margin-bottom:1em">
-            <div class="col-2" style="text-align: right;">
-                CLEVER
-            </div>
-            <div class="col">
-                The <a href="https://client-specific-equivalence-checker.github.io/">CLEVER</a>
-                (CLient EquiValence checkER) project aims to address
-                the problem of whether a component update affects its overall
-                system. CLEVER uses a variety of (semi-)automated techniques.
-            </div>
-        </div>
-        <div class="row" style="margin-bottom:2em">
-            <div class="col-2" style="text-align: right;">
-                Z3str3
-            </div>
-            <div class="col">
-                <a href="https://sites.google.com/site/z3strsolver/">Z3str3</a>
-                is a constraint solver for the quantifier-free theory of string equations. I contribute to Z3str3, 
-                <a href="http://stringfuzz.dmitryblotsky.com">StringFuzz</a>, and help maintain a
-                <a href="http://stringfuzz.dmitryblotsky.com/benchmarks/">website</a> that compares string solvers on a collection of StringFuzz
-                <a href="http://stringfuzz.dmitryblotsky.com/suites/generated/">benchmarks</a>.
-            </div>
-        </div>
-
-        <div class="row" style="margin-bottom:0em">
-            <div class="col-2" style="text-align: right;">
-
-            </div>
-            <div class="col">
-                <div class="row">
-                    <div class="col">
-                        <object data="http://stringfuzz.dmitryblotsky.com/static/svg/plots/overall_cactus.svg" type="image/svg+xml">
-                            <img src="http://stringfuzz.dmitryblotsky.com/static/svg/plots/overall_cactus.svg" />
-                        </object>
-                    </div>
-                    <div class="col">
-                        <object data="http://stringfuzz.dmitryblotsky.com/static/svg/plots/overall_bar.svg" type="image/svg+xml">
-                            <img src="http://stringfuzz.dmitryblotsky.com/static/svg/plots/overall_bar.svg" />
-                        </object>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <div class="row">
-            <div class="col">
-                <h2 id="Teaching">Teaching</h2>
-            </div>
-        </div>
-
-
-        <div class="row" style="margin-bottom:0.75em">
-            <div class="col-2" style="text-align: right;">
-                Current
-            </div>
-            <div class="col">
-                Teaching Assistant, University of Toronto
-                <br>
-                <a href="http://www.cs.toronto.edu/~chechik/courses16/csc410/">CSC 410: Software Testing and Verification</a>
-            </div>
-        </div>
+<div class="profile">
+    <div class="profile-left">
+        <img class="headshot" align="left" src="images/federico.JPG" alt="Federico Mora">
         
-        <div class="row" style="margin-bottom:0.75em">
-            <div class="col-2" style="text-align: right;">
-                Previous
-            </div>
-            <div class="col">
-                Teaching Assistant, University of Toronto
-                <br>
-                <a href="https://www.cs.toronto.edu/~gfb/csc324/2017F/">CSC 324: Programming Languages</a>
-                <br>
-                <a href="http://www.teach.cs.toronto.edu/~csc384h/winter/">CSC 384: Introduction to Artificial Intelligence</a>
-            </div>
-        </div>
+        <p>My name is Federico Mora. I am beginning a Ph.D. at the <a
+        href="https://eecs.berkeley.edu/">University of California,
+        Berkeley</a> in September.
+    
+        My research focuses on applied logic, programming languages, and
+        software engineering.</p>
 
-        <div class="row">
-            <div class="col-2" style="text-align: right;">
-
-            </div>
-            <div class="col">
-                Teaching Assistant, Mount Allison University
-                <br> 
-                <a href="https://www.mta.ca/academic_calendar/18-19a/ComputerScience.html">COMP 1631: Introduction to Computer Science</a>
-            </div>
-        </div>
-
-        <br>
-        <div class="row">
-            <div class="col">
-                <h2 id="Awards">Awards</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2" style="text-align: right;">
-                2018
-            </div>
-            <div class="col" style="font-size:95%">
-                <em>C. C. Gotlieb (Kelly) Graduate Fellowship</em>.&nbsp; 
-                Awarded to a graduate student in any sub-discipline of computer 
-                science on the basis of academic merit.
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2" style="text-align: right;">
-                2017
-            </div>
-            <div class="col" style="font-size:95%">
-                <em>Alfred B. Lehman Graduate Scholarship</em>.&nbsp; Awarded on
-                the basis of academic merit with preference given to students 
-                studying in the area of discrete mathematics.
-            </div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col">
-                <h2 id="Professional">Professional</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2" style="text-align: right;">
-                2018
-            </div>
-            <div class="col" style="font-size:95%">
-                <em>
-                    External Reviewer.
-                </em>&nbsp;
-                <a href="http://ase2018.com/">ASE</a>,
-                <a href="http://cavconference.org/2018/">CAV</a>, and
-                <a href="http://ijcar2018.org/">IJCAR</a>.
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-2" style="text-align: right;">
-                2017
-            </div>
-            <div class="col" style="font-size:95%">
-                <em>
-                    External Reviewer.
-                </em>&nbsp;
-                <a href="http://ase2017.org/">ASE</a> and
-                <a href="http://esec-fse17.uni-paderborn.de/">FSE</a>.
-            </div>
-        </div>
-
+        <p>I received a M.Sc. in computer science from the <a
+        href="http://web.cs.toronto.edu/">University of Toronto</a> where I
+        was advised by <a href="http://www.cs.toronto.edu/~chechik/">Marsha
+        Chechik</a>. I received a B.Sc. in computer science and mathematics
+        from <a href="https://www.mta.ca/Prospective/Default.aspx">Mount
+        Allison University</a>. </p>
+    
+        <p>Here is my 
+            <a href="./pdfs/cv.pdf">cv</a>, 
+            <a href="mailto:federico_mora+website@berkeley.edu">email</a>,
+            <a href="https://github.com/FedericoAureliano">github</a>, and 
+            <a href="https://scholar.google.com/citations?user=mm91pq0AAAAJ&hl=es">google scholar</a>.
+        </p>
     </div>
+</div>
 
+<div class="section">
+    <h3>News</h3>
+    <div class="hbar"> </div>
+    <div id="news">
+    </div>
+</div>
+
+<div class="section">
+    <h3>
+        <select onchange="display_pubs(this.value)">
+            <option value="">All Publications</option>
+            <option value="applied logic">Publications Related to Applied Logic</option>
+            <!-- <option value="programming languages">Publications Related to Programming Languages</option> -->
+            <option value="software engineering">Publications Related to Software Engineering</option>
+        </select>
+    </h3>
+    <div class="hbar"> </div>
+    <div id="publications">
+    </div>
+</div>
+
+<div class="section">
+    <h3>Collaborators</h3>
+    <div class="hbar"> </div>
+    <div id="collaborators">
+        <p>I've been extremely lucky to work with the following wonderful people:
+            <a href="https://www.mta.ca/~rrosebru/">Bob Rosebrugh</a>,
+            <a href="http://dmitryblotsky.com/">Dmitry Blotsky</a>,
+            <a href="https://cs.uwaterloo.ca/~j29scott/">Joe Scott</a>,
+            <a href="https://www.ece.ubc.ca/~mjulia/">Julia Rubin</a>,
+            <a href="http://www.cs.toronto.edu/~chechik/">Marsha Chechik</a>,
+            <a href="https://github.com/mtrberzi">Murphy Berzish</a>,
+            <a href="https://www.cs.usask.ca/faculty/spiteri/">Raymond Spiteri</a>,
+            <a href="https://ece.uwaterloo.ca/~vganesh/">Vijay Ganesh</a>, and
+            <a href="http://www.ntu.edu.sg/home/yi_li/">Yi Li</a>.
+        Check out their websites and work!
+        </p>
+    </div>
+</div>
+
+<div id="footer">
+</div>
+
+</div>
 </body>
 
 </html>

@@ -1,0 +1,15 @@
+pubs = [{
+        "title": "Client-Specific Equivalence Checking",
+        "conference": "ASE '18",
+        "authors": "F. Mora, Y. Li, J. Rubin, and M. Chechik",
+        "link": "https://dl.acm.org/citation.cfm?doid=3238147.3238178",
+        "tags": "software engineering"
+    },
+    {
+        "title": "StringFuzz: A Fuzzer for String Solvers",
+        "conference": "CAV '18",
+        "authors": "D. Blotsky, F. Mora, M. Berzish, Y. Zheng, I. Kabir, and V. Ganesh",
+        "link": "https://link.springer.com/chapter/10.1007/978-3-319-96142-2_6",
+        "tags": "applied logic, software engineering"
+    },
+];
