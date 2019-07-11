@@ -2,21 +2,21 @@ pubs = [{
         "title": "An algorithm selection approach to QF\_FP",
         "conference": "SMT '19",
         "authors": "Joseph Scott, Pascal Poupart, Vijay Ganesh",
-        "link": "https://dl.acm.org/citation.cfm?doid=3238147.3238178",
+        "link": "./pdfs/smt19.pdf",
         "tags": "applied logic, machine learning"
     },
     {
         "title": "Verifying Mutable Systems",
         "conference": "Thesis 18",
         "authors": "Joseph Scott",
-        "link": "https://link.springer.com/chapter/10.1007/978-3-319-96142-2_6",
+        "link": "./pdfs/mmath.pdf",
         "tags": "applied logic, software engineering"
     },
     {
         "title": "A Propagation Rate based Splitting Heuristic for Divide-and-Conquer Solvers",
         "conference": "SAT 17",
         "authors": "Saeed Nejati, Zack Newsham, Joseph Scott, Jia Hui Liang, Catherine Gebotys, Pascal Poupart, and Vijay Ganesh",
-        "link": "https://link.springer.com/chapter/10.1007/978-3-319-96142-2_6",
+        "link": "./pdfs/sat17.pdf",
         "tags": "applied logic, software engineering"
     },
 

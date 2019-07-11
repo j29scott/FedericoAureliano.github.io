@@ -1,7 +1,11 @@
 news = [
     {
+        "date": "07/2019",
+        "text": "I am attending <a href=\"https://reason.di.fc.ul.pt/ssa-school-2019\"> SAT/SMT/AR Summer School '19 </a>, <a href=\"http://smt2019.galois.com\"> SMT '19 </a>, and <a href=\"http://sat2019.tecnico.ulisboa.pt/\"> SAT '19 </a> in Lisbon, Portugal",
+    },
+    {
         "date": "06/2019",
-        "text": "My will have a paper at SMT19 and will be attending the Workshop",
+        "text": "Our Paper, An algorithm selection approach for QF_FP, will appear in SMT19!",
     },
     {
         "date": "05/2019",
