@@ -1,4 +1,12 @@
-pubs = [{
+pubs = [
+    {
+        "title": "LGML: Logic Guided Machine Learning",
+        "conference": "AAAI '20",
+        "authors": "Joseph Scott, Maysum Panju, Vijay Ganesh",
+        "link": "./pdfs/aaai20.pdf",
+        "tags": "applied logic, machine learning"
+    },
+    {
         "title": "An algorithm selection approach to QF\_FP",
         "conference": "SMT '19",
         "authors": "Joseph Scott, Pascal Poupart, Vijay Ganesh",
